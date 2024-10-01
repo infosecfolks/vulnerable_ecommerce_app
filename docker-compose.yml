@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8090:80"
+    volumes:
+      - ./app:/var/www/html
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: vuln_ecommerce
+    
