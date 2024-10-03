@@ -1,12 +1,12 @@
-# vulnerable_ecommerce_app
-This is vulnerable ecommerce application built on docker environment using PHP and Mysql technologies.
+# Vulnerable_ecommerce_app
+This vulnerable e-commerce application is built in a Docker environment using Apache, PHP, and MySQL technologies. It is intended solely for educational purposes to practice penetration testing. Do not attempt these techniques on real-world applications without proper consent from the application owners.
 
 Follow the below steps to deploy it as docker in your machine.
 
 > [!TIP]
-> We recommend to use Kali linux as your base machine to run this docker containers, as it is already pack with required tools for learning penetration testing. 
+> We recommend using Kali Linux as your base OS for running these Docker containers, as it comes pre-installed with the essential tools for learning penetration testing! 
 
-## Installing and enabling docker
+## Steps to Install and enable docker
 
 > [!NOTE]
 > If you don't have docker installted in your machine you can follow this below steps, otherwise skip to Building and running docker containers
@@ -17,14 +17,14 @@ Update kali repository <br>
 Installing docker <br> 
 **#sudo apt-get install -y docker.io**
 
-To start and enable docker service<br> 
+Start and enable docker service<br> 
 **#sudo systemctl start docker <br> 
 #sudo systemctl enable docker**
 
 Check docker version <br> 
 **#docker --version**
 
-## Deploying and running vulnerable commerce as docker container 
+## Steps to run vulnerable ecommerce as docker container 
 
 After installing docker, now navigate to the cloned directory which is "vulnerable_ecommerce_app" and execute following docker commands <br> 
 to deploy and launch vulnerable ecommerce application
