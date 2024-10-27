@@ -9,6 +9,7 @@ COPY app/images/ /var/www/html/images/
 
 # Create uploads and images directories with appropriate permissions
 RUN mkdir -p /var/www/html/uploads && chmod -R 777 /var/www/html/uploads
+RUN chown -R www-data:www-data /var/www/html/uploads
 RUN chmod -R 777 /var/www/html/images
 
 COPY app/ /var/www/html/
