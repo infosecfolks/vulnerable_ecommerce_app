@@ -6,15 +6,18 @@ services:
       - "8090:80"
     depends_on:
       - db
+    networks:
+      - vuln_network
+
   db:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: vuln_ecommerce
-    ports:
-      - "3306:3306"
     volumes:
       - ./app/db_init.sql:/docker-entrypoint-initdb.d/db_init.sql:ro
+    ports:
+      - "3306:3306"
     networks:
       - vuln_network
 
