@@ -46,6 +46,7 @@ VALUES
 ('guest', 'guest@example.com', '9876543201', 'qwerty', 'Who is your favorite in sports?', 'virat', 'user'),
 ('john', 'john@gmail.com', '9534567890', 'john@123', 'Who is your favorite in sports?', 'dhoni', 'user'),
 ('tom', 'tom@gmail.com', '9087654321', 'tom@456', 'Which year were you born?', '1987', 'user'),
+('infosecfolks', 'infosecfolks@infosec.com', '7090654321', 'infosecfolks@123', 'Which year were you born?', '1992', 'user'),    
 ('shyam', 'shyam@gmail.com', '9234567890', 'shyam9234', 'What is your favorite color?', 'green', 'user'),
 ('nick', 'nick@gmail.com', '7987654621', 'nick4621', 'What is your favorite color?', 'yellow', 'user');
 
