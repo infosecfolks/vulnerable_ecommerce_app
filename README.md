@@ -1,6 +1,11 @@
 # Vulnerable_ecommerce_app
 This vulnerable e-commerce application is built in a Docker environment using Apache, PHP, and MySQL technologies. It is intended solely for educational purposes to practice penetration testing. Do not attempt these techniques on real-world applications without proper consent from the application owners.
 
+**Default username & password 
+
+username - infosecfolks
+password - infosecfolks@123**
+
 ![Architecture](vulnerable%20ecommerce%20architecture.jpg)
 
 Follow the below steps to deploy it as docker in your machine.
@@ -42,6 +47,7 @@ This command runs the web container and link with database container <br>
 
 This command initialize the database <br> 
 **#sudo docker exec -i ecommerce_db mysql -u root -ppassword vuln_ecommerce < app/db_init.sql**
+
 
 Follow us for more updates <br> 
 [INFOSEC FOLKS - LINKEDIN](https://www.linkedin.com/company/infosecfolks-global/) <br> 
