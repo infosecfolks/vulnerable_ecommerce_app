@@ -51,4 +51,7 @@ This command initialize the database <br>
 
 Follow us for more updates <br> 
 [INFOSEC FOLKS - LINKEDIN](https://www.linkedin.com/company/infosecfolks-global/) <br> 
-[INFOSEC FOLKS - YOUTUBE](https://www.youtube.com/@infosecfolks-global/)
+[INFOSEC FOLKS - LINKEDIN](https://www.linkedin.com/company/infosecfolks-telugu) <br> 
+[INFOSEC FOLKS - YOUTUBE](https://www.youtube.com/@infosecfolks-global/) <br> 
+[INFOSEC FOLKS Telugu - YOUTUBE](https://www.youtube.com/@InfosecFolks-Telugu/) <br>
+
