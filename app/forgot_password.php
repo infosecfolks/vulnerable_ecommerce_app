@@ -99,6 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="hidden" name="security_question" value="<?php echo htmlspecialchars($security_question); ?>">
                 <button type="submit" class="btn btn-primary">Submit Answer</button>
             </form>
+            </br>
+            <a href='login.php'>Go back to Login page</a>
         <?php elseif ($step == 3): ?>
             <form method="post">
                 <div class="form-group">
