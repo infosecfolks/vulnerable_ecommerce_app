@@ -67,6 +67,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+	<?php
+	if (isset($_GET['redirect'])) {
+    	    $redirect = $_GET['redirect'];
+    	    echo "<script>window.location.href='$redirect';</script>";
+    	    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -171,13 +179,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <button type="submit" class="btn btn-primary">Login</button>
+            
+            <!-- Forget Password Button -->
+            <div class="form-group">
+	    <a href="?redirect=forgot_password.php" class="btn btn-warning">Forgot Password?</a>
+	    </div>
         </form>
+        
 
-        <!-- Link to the insecure password reset page -->
-        <p class="mt-3">
-            <a href="forgot_password.php">Forgot Password?</a>
-        </p>
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
