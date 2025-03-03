@@ -103,13 +103,22 @@ include 'db.php';
             </div>
         </form>
 
-        <?php
-        // Reflecting the search query directly back to the user (Reflected XSS)
-        if (isset($_GET['search_product'])) {
-            echo "<div class='alert alert-info'>Search Results for: " . $_GET['search_product'] . "</div>";
-            echo "<script>alert('" . $_GET['search_product'] . "');</script>";  // Trigger XSS here
-        }
-        ?>
+	<?php
+
+        
+
+        // Check if 'search_product' exists in the request
+        if (isset($_GET['search_product']) && $_GET['search_product'] !== '') {
+            $search_input = $_GET['search_product'];
+
+            // Display user input as-is (vulnerable to XSS)
+            echo "<div class='alert alert-info'>Search Results for: " . $search_input . "</div>";
+
+            // Directly reflect input inside the script tag
+            echo "<script>" . $search_input . "</script>";
+}
+
+?>
 
         <!-- SQL Injection Vulnerability -->
         <form method="get" action="shopping.php">
