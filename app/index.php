@@ -96,7 +96,7 @@ session_start();
         <p>This lab is designed for educational purposes, to help you understand how to discover and exploit vulnerabilities in real-world applications. Do not attempt these approaches on live applications hosted on the internet without proper consent.</p>
         <p>This application is designed & maintained by "INFOSEC FOLKS" security community. You can find the source image on <a href="https://infosecfolks.org">INFOSEC FOLKS</a>.</p>
         <div style="text-align: center;">
-            <img src="logo.jpg" alt="Logo" height="150" width="150" />
+            <img src="images/logo.jpg" alt="Logo" height="150" width="150" />
         </div>
     </div>
 
