@@ -22,6 +22,16 @@ RUN chown -R www-data:www-data /var/www/html/uploads
 # Optional: Set correct permissions
 RUN chmod -R 777 /var/www/html/uploads 
 
+# Enable directory listing in Apache (Fixing the previous issue)
+RUN echo '<Directory "/var/www/html/images">\n\
+    Options +Indexes\n\
+    AllowOverride None\n\
+    Require all granted\n\
+</Directory>' >> /etc/apache2/apache2.conf
+
+# Restart Apache to apply changes
+RUN service apache2 restart
+
 # Expose port 80
 EXPOSE 80
 
