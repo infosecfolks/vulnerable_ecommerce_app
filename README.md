@@ -48,6 +48,10 @@ This command runs the web container and link with database container <br>
 This command initialize the database <br> 
 **#sudo docker exec -i ecommerce_db mysql -u root -ppassword vuln_ecommerce < app/db_init.sql**
 
+Set auto-restart (Containers automatically restart after poweroff/reboot of kali linux
+**#sudo docker update --restart unless-stopped ecommerce_web** <br>
+**#sudo docker update --restart unless-stopped ecommerce_db**
+
 
 Follow us for more updates <br> 
 [INFOSEC FOLKS - LINKEDIN](https://www.linkedin.com/company/infosecfolks-global/) <br> 
