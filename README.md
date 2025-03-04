@@ -3,7 +3,7 @@ This vulnerable e-commerce application is built in a Docker environment using Ap
 
 Default username & password 
 ----------------------------
-username - infosecfolks &&
+username - infosecfolks <br>
 password - infosecfolks@123
 
 ![Architecture](vulnerable%20ecommerce%20architecture.jpg)
